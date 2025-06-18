@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Online Bookstore</title>
+</head>
+<body>
+<h2>Welcome to the Online Bookstore</h2>
+
+<form method="get" th:action="@{/}">
+    <input type="text" name="keyword" placeholder="Search books..." th:value="${keyword}">
+    <button type="submit">Search</button>
+</form>
+
+<hr/>
+
+<table border="1">
+    <tr>
+        <th>Title</th><th>Author</th><th>Category</th><th>Price</th>
+    </tr>
+    <tr th:each="book : ${books}">
+        <td th:text="${book.title}">Title</td>
+        <td th:text="${book.author}">Author</td>
+        <td th:text="${book.category}">Category</td>
+        <td th:text="${book.price}">Price</td>
+    </tr>
+</table>
+
+</body>
+</html>
+

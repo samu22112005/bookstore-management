@@ -1,0 +1,6 @@
+com\bookstore\controller\BookController.class
+com\bookstore\model\Book.class
+com\bookstore\BookstoreApplication.class
+com\bookstore\controller\LoginController.class
+com\bookstore\config\SecurityConfig.class
+com\bookstore\repository\BookRepository.class
